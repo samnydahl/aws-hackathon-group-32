@@ -1,0 +1,27 @@
+{
+  "name": "node-docker-good-defaults",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Node.js Hello world app using docker features for easy docker-compose local dev and solid production defaults",
+  "author": "Bret Fisher <bret@bretfisher.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev-docker": "../node_modules/nodemon/bin/nodemon.js --debug=5858",
+    "dev-host": "nodemon --debug=5858"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "aws-sdk": "^2.157.0",
+    "body-parser": "^1.18.2",
+    "exif": "^0.6.0",
+    "exif-parser": "^0.1.12",
+    "express": "^4.14.1",
+    "express-fileupload": "^0.3.0",
+    "morgan": "^1.8.1",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
